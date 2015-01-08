@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Lesson04InClass" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tug-DB-495">
+                                <rect key="frame" x="252" y="285" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="V3C-ti-Qyo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSO-Yt-BUX">
+                                <rect key="frame" x="252" y="333" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xhu-4R-dRr">
+                                <rect key="frame" x="275" y="371" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="F3o-cf-7LO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HoA-W4-weJ">
+                                <rect key="frame" x="240" y="417" width="121" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="SrS-Up-gHT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="HoA-W4-weJ" firstAttribute="top" secondItem="Xhu-4R-dRr" secondAttribute="bottom" constant="16" id="32C-8M-Icl"/>
+                            <constraint firstItem="MSO-Yt-BUX" firstAttribute="leading" secondItem="tug-DB-495" secondAttribute="leading" id="A7d-hD-L9G"/>
+                            <constraint firstItem="Xhu-4R-dRr" firstAttribute="top" secondItem="MSO-Yt-BUX" secondAttribute="bottom" constant="8" symbolic="YES" id="K1j-jW-mWe"/>
+                            <constraint firstItem="tug-DB-495" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="MV0-pX-Yl4"/>
+                            <constraint firstItem="HoA-W4-weJ" firstAttribute="centerX" secondItem="MSO-Yt-BUX" secondAttribute="centerX" id="Nj1-Vp-FAh"/>
+                            <constraint firstItem="MSO-Yt-BUX" firstAttribute="top" secondItem="tug-DB-495" secondAttribute="bottom" constant="18" id="PAg-Jq-2Cs"/>
+                            <constraint firstItem="MSO-Yt-BUX" firstAttribute="trailing" secondItem="tug-DB-495" secondAttribute="trailing" id="UeZ-nm-Zu9"/>
+                            <constraint firstItem="tug-DB-495" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="nNB-hf-1Et"/>
+                            <constraint firstItem="Xhu-4R-dRr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="275" id="tj9-7l-TRL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Label" destination="HoA-W4-weJ" id="XuB-iQ-TIa"/>
+                        <outlet property="TipPercentage" destination="tug-DB-495" id="xrn-YR-0HS"/>
+                        <outlet property="TotalBill" destination="MSO-Yt-BUX" id="uT7-Fn-GVc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="331" y="360"/>
+        </scene>
+    </scenes>
+</document>
