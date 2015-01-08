@@ -123,7 +123,36 @@ fibSum(6)
 
 // TODO: Write a function that takes in a number and prints out whether it is prime, composite or neither.
 
+
+    func primeDetector (testNumber: Int) -> String {
+        let neither = "neither"
+        let prime = "prime"
+        let composite = "composite"
+        
+    // identify exceptions
+        if testNumber <= 1 {
+            return neither
+        } else if testNumber == 2 {
+            return prime
+        } else {
+            //divide testNumber by each number that is smaller than it
+            for i in 2...(testNumber - 1) {
+                if testNumber % i == 0 {
+                    return composite
+                }
+            }
+            //give result
+            return prime
+        }
+    }
+    
+    let result = primeDetector(5)
+    
+}
+
 // TODO: Write a function that prints out each of the first 20 fibonacci numbers and whether they are prime. (e.g. 0 is not prime or composite, 1 is prime, etc)
+
+
 
 // TODO: Write a function that takes in two numbers, a bill amount and an optional tip percentage (represented as a float, e.g. .2 = 20% tip). Return a tuple with the total bill amount and the tip amount (if included).
 // float is for decimals, int is for integers
