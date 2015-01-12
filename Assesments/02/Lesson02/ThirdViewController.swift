@@ -11,6 +11,7 @@ import UIKit
 class ThirdViewController: UIViewController {
 /*
     TODO six: Hook up the number input text field, button and text label to this class. When the button is pressed, a message should be printed to the label indicating whether the number is even.
+<<<<<<< HEAD
 */
 
     @IBOutlet weak var NumberTextField: UITextField!
@@ -26,3 +27,8 @@ var EvenOddTest = NumberTextField.text.toInt()
   }
     
 }
+=======
+
+*/
+}
+>>>>>>> d0aeb078850e4995d3740540ef89afd5fda678e8
