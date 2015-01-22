@@ -121,5 +121,3 @@ let closureSumFunction = {(v1: Int, v2: Int) -> Int in
 
 let sumPassingClosureVariable = numbers.reduce(0, closureSumFunction)
 
-
-
