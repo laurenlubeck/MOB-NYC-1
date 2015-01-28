@@ -12,7 +12,7 @@ class ArrayTableViewController: UITableViewController {
     
     /*
         TODO five: Create a subclass of the Animal class, add an instance of that object to be displayed in the table view, then change the displayed string of the subclass to your liking. Your subclass should override the function 'prettyAnimalName' (i.e. you should only need to modify the below array, not the table view code)
-    */
+
   let animalArray = [
     Animal(name: "Rover"),
     Animal(name: "Mittens"),
@@ -31,8 +31,10 @@ class ArrayTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("CellIdentifier") as? UITableViewCell ?? UITableViewCell(style: .Default, reuseIdentifier: "CellIdentifier")
         
-        cell.textLabel.text = animalArray[indexPath.row].prettyAnimalName()
-        
+       cell.textLabel.text = animalArray[indexPath.row].prettyAnimalName()
+
         return cell
     }
+
+*/
 }

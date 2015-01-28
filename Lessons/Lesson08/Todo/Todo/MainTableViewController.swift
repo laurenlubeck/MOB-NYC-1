@@ -10,7 +10,10 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
 
-    var todos = ["groceries", "homework", "walk dog"]
+    var todos = ["name" : "Code More!",
+        "Status" : "To Do",
+        "Due" : "March"
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +52,7 @@ class MainTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
         
-        cell.textLabel?.text = todos[indexPath.row]
+        cell.textLabel?.text = self.[indexPath.row]["todos"] as? NSString
         return cell
     }
 
