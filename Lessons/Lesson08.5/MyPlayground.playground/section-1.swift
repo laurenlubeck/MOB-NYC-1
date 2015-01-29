@@ -7,7 +7,7 @@ var foo: [String] = []
 var zing: Array<String> = []
 var bar = ["boooooooooo!"]
 
-// Dicts
+// Dictionaries
 var baz: [String: String] = [:]
 var bif = ["foo": "bar"]
 var ping: Dictionary<String, String> = [:]
@@ -15,8 +15,12 @@ var ping: Dictionary<String, String> = [:]
 foo.append("hey!")
 
 var zoom: [[String: String]] = []
+
+// can also right like this...
 var zoom2: [Dictionary<String, String>] = []
 
+
+// note dictionaries do not format based on order
 let todos = [
     [
         "name": "groceries",
