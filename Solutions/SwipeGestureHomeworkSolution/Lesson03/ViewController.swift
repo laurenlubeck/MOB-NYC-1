@@ -40,19 +40,21 @@ class ViewController: UIViewController, InfoVCDelegate {
 
 
 //    TODO two: Add an imageview to the modal dialog presented in TODO two.
+    
+    
 //    TODO three: Add and hook up a ‘dismiss’ button below the above mentioned image view that will dismiss the modal dialog. Do this in CODE.
   
 //    TODO four: Hook up the button on the home screen to push ArrayTableViewController into view (via the navigation controller) when tapped. Do this by triggering a segue from this view controller. The method you are looking for is performSegueWithIdentifier. Find the identifier from the storyboard.
   
-  @IBAction func displayTapped(sender: AnyObject) {
-    self.performSegueWithIdentifier("show", sender: self)
-  }
-  
-  // MARK: InfoVCDelegate
-  func infoVCDismissed() {
-    label.text = "you don't have to swipe again, but you can if you would like to."
-    button.hidden = false
-  }
+//  @IBAction func displayTapped(sender: AnyObject) {
+//    self.performSegueWithIdentifier("show", sender: self)
+//  }
+//  
+//  // MARK: InfoVCDelegate
+//  func infoVCDismissed() {
+//    label.text = "you don't have to swipe again, but you can if you would like to."
+//    button.hidden = false
+//  }
   
   
 }

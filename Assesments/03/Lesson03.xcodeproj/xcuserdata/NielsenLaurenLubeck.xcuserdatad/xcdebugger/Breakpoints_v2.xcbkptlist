@@ -6,26 +6,26 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lesson03/ViewController.swift"
-            timestampString = "444166445.317085"
+            timestampString = "444417744.397792"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
             landmarkName = "ViewController"
             landmarkType = "3">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Lesson03.ViewController.label.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UILabel&gt;"
                   moduleName = "Lesson03"
                   urlString = "file:///Users/NielsenLaurenLubeck/MOB-NYC-1/Assesments/03/Lesson03/ViewController.swift"
-                  timestampString = "444170820.819543"
+                  timestampString = "444416214.526654"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -33,13 +33,13 @@
                   offsetFromSymbolStart = "16">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Lesson03.ViewController.label.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UILabel&gt;"
                   moduleName = "Lesson03"
                   urlString = "file:///Users/NielsenLaurenLubeck/MOB-NYC-1/Assesments/03/Lesson03/ViewController.swift"
-                  timestampString = "444170820.819774"
+                  timestampString = "444416214.526922"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -47,13 +47,13 @@
                   offsetFromSymbolStart = "16">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Lesson03.ViewController.init (Lesson03.ViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Lesson03.ViewController"
                   moduleName = "Lesson03"
                   urlString = "file:///Users/NielsenLaurenLubeck/MOB-NYC-1/Assesments/03/Lesson03/ViewController.swift"
-                  timestampString = "444170820.820028"
+                  timestampString = "444416214.527925"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -61,13 +61,13 @@
                   offsetFromSymbolStart = "53">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Lesson03.ViewController.init (Lesson03.ViewController.Type)() -&gt; Lesson03.ViewController"
                   moduleName = "Lesson03"
                   urlString = "file:///Users/NielsenLaurenLubeck/MOB-NYC-1/Assesments/03/Lesson03/ViewController.swift"
-                  timestampString = "444170820.820256"
+                  timestampString = "444416214.528206"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -75,13 +75,13 @@
                   offsetFromSymbolStart = "24">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Lesson03.ViewController.init (Lesson03.ViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Lesson03.ViewController"
                   moduleName = "Lesson03"
                   urlString = "file:///Users/NielsenLaurenLubeck/MOB-NYC-1/Assesments/03/Lesson03/ViewController.swift"
-                  timestampString = "444170820.820488"
+                  timestampString = "444416214.52849"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -89,6 +89,16 @@
                   offsetFromSymbolStart = "28">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

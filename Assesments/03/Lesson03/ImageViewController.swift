@@ -13,13 +13,17 @@ protocol InfoVCDelegate {
 
 class ImageViewController: UIViewController {
     
-    @IBOutlet weak var button: UIButton!
     
+    @IBOutlet weak var sukiPhoto: UIImageView!
+    @IBOutlet weak var imageViewButton: UIButton!
+
     var delegate: InfoVCDelegate?
     
     @IBAction func dismissTapped(sender: AnyObject) {
         delegate?.infoVCDismissed()
-        self.dismissViewControllerAnimated(true, completion: { print("done!") })
+        
+        self.dismissViewControllerAnimated(true, completion: {print("done!") })
+        
     }
     
 
