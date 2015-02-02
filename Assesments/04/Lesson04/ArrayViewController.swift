@@ -23,16 +23,16 @@ class ArrayViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var destination = segue.destinationViewController as MapViewController
-        destination.ArrayViewController = self
+    destination.ArrayViewController = self
     }
     
-    override func didReceiveMemoryWarning() {
+override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(animated: Bool) {
-        self.tableView.reloadData()
+   override func viewDidAppear(animated: Bool) {
+      self.tableView.reloadData()
     }
 
     
@@ -41,20 +41,21 @@ class ArrayViewController: UIViewController {
         */
         
         // MARK: - Table view data source
-        
-        override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-            return 1
-        }
+   
+    
+  override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+     }
         
         override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return todos.count
-        }
-        
-        override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
+        return todos.count
+      }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
             
-            cell.textLabel?.text = todos[indexPath.row]
-            return cell
+         cell.textLabel?.text = todos[indexPath.row]
+          return cell
         }
         
         
