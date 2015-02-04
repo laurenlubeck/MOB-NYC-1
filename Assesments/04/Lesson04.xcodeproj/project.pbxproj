@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		5DCED9BB19D8E50600DE1DC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCED9BA19D8E50600DE1DC2 /* AppDelegate.swift */; };
 		5DCED9BD19D8E50600DE1DC2 /* ArrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCED9BC19D8E50600DE1DC2 /* ArrayViewController.swift */; };
-		5DCED9C019D8E50600DE1DC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCED9BE19D8E50600DE1DC2 /* Main.storyboard */; };
 		5DCED9C219D8E50600DE1DC2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DCED9C119D8E50600DE1DC2 /* Images.xcassets */; };
 		5DCED9D119D8E50600DE1DC2 /* Lesson04Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCED9D019D8E50600DE1DC2 /* Lesson04Tests.swift */; };
 		5DCED9DB19D8E6DF00DE1DC2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCED9DA19D8E6DF00DE1DC2 /* MapViewController.swift */; };
 		C88EF9761A7AC76E00D64D82 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EF9751A7AC76E00D64D82 /* ModalViewController.swift */; };
+		C8CC0C521A807A56003D49AE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CC0C511A807A56003D49AE /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +31,13 @@
 		5DCED9B919D8E50600DE1DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DCED9BA19D8E50600DE1DC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DCED9BC19D8E50600DE1DC2 /* ArrayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayViewController.swift; sourceTree = "<group>"; };
-		5DCED9BF19D8E50600DE1DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5DCED9C119D8E50600DE1DC2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5DCED9CA19D8E50600DE1DC2 /* Lesson04Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lesson04Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCED9CF19D8E50600DE1DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DCED9D019D8E50600DE1DC2 /* Lesson04Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson04Tests.swift; sourceTree = "<group>"; };
 		5DCED9DA19D8E6DF00DE1DC2 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C88EF9751A7AC76E00D64D82 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		C8CC0C511A807A56003D49AE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +82,8 @@
 				5DCED9BA19D8E50600DE1DC2 /* AppDelegate.swift */,
 				5DCED9DA19D8E6DF00DE1DC2 /* MapViewController.swift */,
 				5DCED9BC19D8E50600DE1DC2 /* ArrayViewController.swift */,
-				5DCED9BE19D8E50600DE1DC2 /* Main.storyboard */,
 				C88EF9751A7AC76E00D64D82 /* ModalViewController.swift */,
+				C8CC0C511A807A56003D49AE /* Storyboard.storyboard */,
 				5DCED9C119D8E50600DE1DC2 /* Images.xcassets */,
 				5DCED9B819D8E50600DE1DC2 /* Supporting Files */,
 			);
@@ -195,8 +195,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DCED9C019D8E50600DE1DC2 /* Main.storyboard in Resources */,
 				5DCED9C219D8E50600DE1DC2 /* Images.xcassets in Resources */,
+				C8CC0C521A807A56003D49AE /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,17 +238,6 @@
 			targetProxy = 5DCED9CB19D8E50600DE1DC2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5DCED9BE19D8E50600DE1DC2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5DCED9BF19D8E50600DE1DC2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5DCED9D219D8E50600DE1DC2 /* Debug */ = {

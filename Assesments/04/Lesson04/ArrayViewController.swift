@@ -25,10 +25,12 @@ class ArrayViewController: UITableViewController {
         super.viewDidLoad()
         
         // for line to preserve selection between presentations
-        //    self.clearsSelectionOnViewWillAppear = false
+        self.clearsSelectionOnViewWillAppear = false
         
         //  display an Edit button in the navigation bar for this view controller.
         self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var button = UIButton(frame: CGRect(x: 50, y: 400, width: 250, height: 30))
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,9 +34,10 @@ class ViewController: UIViewController {
      
         loginButton.addTarget(self,action: "tappedButton",forControlEvents: UIControlEvents.TouchUpInside)
         
-        loginButton.addTarget(self,action: "jumpingButton",forControlEvents: UIControlEvents.TouchUpInside)
+        button.setTitle("click!", forState: UIControlState.Normal)
+        button.addTarget(self,action: "jumpingButton",forControlEvents: UIControlEvents.TouchUpInside)
         
-        var label = UILabel(frame: CGRect(x: 50, y: 65, width: 200, height: 60))
+        var label = UILabel(frame: CGRect(x: 50, y: 30, width: 200, height: 60))
         label.text = "Todo Feb 2, 2015"
         label.textColor = UIColor.whiteColor()
         
@@ -46,6 +48,7 @@ class ViewController: UIViewController {
         mainView.addSubview(loginButton)
         mainView.addSubview(password)
         mainView.addSubview(label)
+        self.view.addSubview(button)
         
     }
     
@@ -53,9 +56,12 @@ class ViewController: UIViewController {
             println("it works!")
         }
     
- //   func jumpingButton(){
-     //
-   // }
+   func jumpingButton(){
+    UIView.animateWithDuration(0.1, animations: { () -> Void in
+        self.button.frame.origin.y = self.button.frame.origin.y + 20
+        self.button.alpha = self.button.alpha - 0.1
+    })
+    }
     
     
     

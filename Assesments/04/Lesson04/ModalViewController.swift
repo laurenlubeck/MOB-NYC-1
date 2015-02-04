@@ -13,6 +13,9 @@ class ModalViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     var todoViewController:ArrayViewController?
     
+
+    @IBOutlet weak var button: UIButton!
+    
     @IBAction func didTapButton(send: AnyObject) { todoViewController?.todos.append(textField.text)
         
         dismissViewControllerAnimated(true, completion: nil)
