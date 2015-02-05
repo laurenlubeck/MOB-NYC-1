@@ -1,20 +1,15 @@
 //
-//  SmileTests.swift
-//  SmileTests
+//  Lesson04Tests.swift
+//  Lesson04Tests
 //
-<<<<<<< HEAD
-//  Created by Lauren Lubeck  on 2/4/15.
-//  Copyright (c) 2015 lauren Lubeck. All rights reserved.
-=======
-//  Created by Rudd Taylor on 2/4/15.
-//  Copyright (c) 2015 GA. All rights reserved.
->>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
+//  Created by Rudd Taylor on 9/28/14.
+//  Copyright (c) 2014 General Assembly. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class SmileTests: XCTestCase {
+class Lesson04Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -7,11 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-<<<<<<< HEAD
-	<string>nielsen.$(PRODUCT_NAME:rfc1034identifier)</string>
-=======
 	<string>com.ga.$(PRODUCT_NAME:rfc1034identifier)</string>
->>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

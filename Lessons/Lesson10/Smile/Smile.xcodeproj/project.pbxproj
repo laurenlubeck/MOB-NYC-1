@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		C8BD446B1A82E90D00580209 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD446A1A82E90D00580209 /* AppDelegate.swift */; };
 		C8BD446D1A82E90D00580209 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD446C1A82E90D00580209 /* ViewController.swift */; };
 		C8BD44701A82E90D00580209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8BD446E1A82E90D00580209 /* Main.storyboard */; };
@@ -21,11 +22,28 @@
 			containerPortal = C8BD445D1A82E90D00580209 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C8BD44641A82E90D00580209;
+=======
+		5D24100F1A82E8FA002FB874 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D24100E1A82E8FA002FB874 /* AppDelegate.swift */; };
+		5D2410111A82E8FA002FB874 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2410101A82E8FA002FB874 /* ViewController.swift */; };
+		5D2410141A82E8FA002FB874 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D2410121A82E8FA002FB874 /* Main.storyboard */; };
+		5D2410161A82E8FA002FB874 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D2410151A82E8FA002FB874 /* Images.xcassets */; };
+		5D2410191A82E8FA002FB874 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2410171A82E8FA002FB874 /* LaunchScreen.xib */; };
+		5D2410251A82E8FA002FB874 /* SmileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2410241A82E8FA002FB874 /* SmileTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D24101F1A82E8FA002FB874 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D2410011A82E8FA002FB874 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D2410081A82E8FA002FB874;
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			remoteInfo = Smile;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		C8BD44651A82E90D00580209 /* Smile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8BD44691A82E90D00580209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8BD446A1A82E90D00580209 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,13 +58,33 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		C8BD44621A82E90D00580209 /* Frameworks */ = {
+=======
+		5D2410091A82E8FA002FB874 /* Smile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D24100D1A82E8FA002FB874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D24100E1A82E8FA002FB874 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D2410101A82E8FA002FB874 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5D2410131A82E8FA002FB874 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D2410151A82E8FA002FB874 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5D2410181A82E8FA002FB874 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5D24101E1A82E8FA002FB874 /* SmileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D2410231A82E8FA002FB874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D2410241A82E8FA002FB874 /* SmileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D2410061A82E8FA002FB874 /* Frameworks */ = {
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+<<<<<<< HEAD
 		C8BD44771A82E90D00580209 /* Frameworks */ = {
+=======
+		5D24101B1A82E8FA002FB874 /* Frameworks */ = {
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,6 +94,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		C8BD445C1A82E90D00580209 = {
 			isa = PBXGroup;
 			children = (
@@ -70,10 +109,27 @@
 			children = (
 				C8BD44651A82E90D00580209 /* Smile.app */,
 				C8BD447A1A82E90D00580209 /* SmileTests.xctest */,
+=======
+		5D2410001A82E8FA002FB874 = {
+			isa = PBXGroup;
+			children = (
+				5D24100B1A82E8FA002FB874 /* Smile */,
+				5D2410211A82E8FA002FB874 /* SmileTests */,
+				5D24100A1A82E8FA002FB874 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D24100A1A82E8FA002FB874 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D2410091A82E8FA002FB874 /* Smile.app */,
+				5D24101E1A82E8FA002FB874 /* SmileTests.xctest */,
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		C8BD44671A82E90D00580209 /* Smile */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,31 +139,64 @@
 				C8BD44711A82E90D00580209 /* Images.xcassets */,
 				C8BD44731A82E90D00580209 /* LaunchScreen.xib */,
 				C8BD44681A82E90D00580209 /* Supporting Files */,
+=======
+		5D24100B1A82E8FA002FB874 /* Smile */ = {
+			isa = PBXGroup;
+			children = (
+				5D24100E1A82E8FA002FB874 /* AppDelegate.swift */,
+				5D2410101A82E8FA002FB874 /* ViewController.swift */,
+				5D2410121A82E8FA002FB874 /* Main.storyboard */,
+				5D2410151A82E8FA002FB874 /* Images.xcassets */,
+				5D2410171A82E8FA002FB874 /* LaunchScreen.xib */,
+				5D24100C1A82E8FA002FB874 /* Supporting Files */,
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			);
 			path = Smile;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		C8BD44681A82E90D00580209 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				C8BD44691A82E90D00580209 /* Info.plist */,
+=======
+		5D24100C1A82E8FA002FB874 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D24100D1A82E8FA002FB874 /* Info.plist */,
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		C8BD447D1A82E90D00580209 /* SmileTests */ = {
 			isa = PBXGroup;
 			children = (
 				C8BD44801A82E90D00580209 /* SmileTests.swift */,
 				C8BD447E1A82E90D00580209 /* Supporting Files */,
+=======
+		5D2410211A82E8FA002FB874 /* SmileTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D2410241A82E8FA002FB874 /* SmileTests.swift */,
+				5D2410221A82E8FA002FB874 /* Supporting Files */,
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			);
 			path = SmileTests;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		C8BD447E1A82E90D00580209 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				C8BD447F1A82E90D00580209 /* Info.plist */,
+=======
+		5D2410221A82E8FA002FB874 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D2410231A82E8FA002FB874 /* Info.plist */,
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -115,6 +204,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+<<<<<<< HEAD
 		C8BD44641A82E90D00580209 /* Smile */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8BD44841A82E90D00580209 /* Build configuration list for PBXNativeTarget "Smile" */;
@@ -122,6 +212,15 @@
 				C8BD44611A82E90D00580209 /* Sources */,
 				C8BD44621A82E90D00580209 /* Frameworks */,
 				C8BD44631A82E90D00580209 /* Resources */,
+=======
+		5D2410081A82E8FA002FB874 /* Smile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D2410281A82E8FA002FB874 /* Build configuration list for PBXNativeTarget "Smile" */;
+			buildPhases = (
+				5D2410051A82E8FA002FB874 /* Sources */,
+				5D2410061A82E8FA002FB874 /* Frameworks */,
+				5D2410071A82E8FA002FB874 /* Resources */,
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			);
 			buildRules = (
 			);
@@ -129,6 +228,7 @@
 			);
 			name = Smile;
 			productName = Smile;
+<<<<<<< HEAD
 			productReference = C8BD44651A82E90D00580209 /* Smile.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -139,20 +239,41 @@
 				C8BD44761A82E90D00580209 /* Sources */,
 				C8BD44771A82E90D00580209 /* Frameworks */,
 				C8BD44781A82E90D00580209 /* Resources */,
+=======
+			productReference = 5D2410091A82E8FA002FB874 /* Smile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D24101D1A82E8FA002FB874 /* SmileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D24102B1A82E8FA002FB874 /* Build configuration list for PBXNativeTarget "SmileTests" */;
+			buildPhases = (
+				5D24101A1A82E8FA002FB874 /* Sources */,
+				5D24101B1A82E8FA002FB874 /* Frameworks */,
+				5D24101C1A82E8FA002FB874 /* Resources */,
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			);
 			buildRules = (
 			);
 			dependencies = (
+<<<<<<< HEAD
 				C8BD447C1A82E90D00580209 /* PBXTargetDependency */,
 			);
 			name = SmileTests;
 			productName = SmileTests;
 			productReference = C8BD447A1A82E90D00580209 /* SmileTests.xctest */;
+=======
+				5D2410201A82E8FA002FB874 /* PBXTargetDependency */,
+			);
+			name = SmileTests;
+			productName = SmileTests;
+			productReference = 5D24101E1A82E8FA002FB874 /* SmileTests.xctest */;
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
+<<<<<<< HEAD
 		C8BD445D1A82E90D00580209 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
@@ -169,6 +290,24 @@
 				};
 			};
 			buildConfigurationList = C8BD44601A82E90D00580209 /* Build configuration list for PBXProject "Smile" */;
+=======
+		5D2410011A82E8FA002FB874 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = GA;
+				TargetAttributes = {
+					5D2410081A82E8FA002FB874 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					5D24101D1A82E8FA002FB874 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 5D2410081A82E8FA002FB874;
+					};
+				};
+			};
+			buildConfigurationList = 5D2410041A82E8FA002FB874 /* Build configuration list for PBXProject "Smile" */;
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -176,6 +315,7 @@
 				en,
 				Base,
 			);
+<<<<<<< HEAD
 			mainGroup = C8BD445C1A82E90D00580209;
 			productRefGroup = C8BD44661A82E90D00580209 /* Products */;
 			projectDirPath = "";
@@ -183,11 +323,21 @@
 			targets = (
 				C8BD44641A82E90D00580209 /* Smile */,
 				C8BD44791A82E90D00580209 /* SmileTests */,
+=======
+			mainGroup = 5D2410001A82E8FA002FB874;
+			productRefGroup = 5D24100A1A82E8FA002FB874 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D2410081A82E8FA002FB874 /* Smile */,
+				5D24101D1A82E8FA002FB874 /* SmileTests */,
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+<<<<<<< HEAD
 		C8BD44631A82E90D00580209 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,6 +349,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C8BD44781A82E90D00580209 /* Resources */ = {
+=======
+		5D2410071A82E8FA002FB874 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D2410141A82E8FA002FB874 /* Main.storyboard in Resources */,
+				5D2410191A82E8FA002FB874 /* LaunchScreen.xib in Resources */,
+				5D2410161A82E8FA002FB874 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D24101C1A82E8FA002FB874 /* Resources */ = {
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -208,6 +371,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+<<<<<<< HEAD
 		C8BD44611A82E90D00580209 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,32 +386,69 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8BD44811A82E90D00580209 /* SmileTests.swift in Sources */,
+=======
+		5D2410051A82E8FA002FB874 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D2410111A82E8FA002FB874 /* ViewController.swift in Sources */,
+				5D24100F1A82E8FA002FB874 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D24101A1A82E8FA002FB874 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D2410251A82E8FA002FB874 /* SmileTests.swift in Sources */,
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+<<<<<<< HEAD
 		C8BD447C1A82E90D00580209 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C8BD44641A82E90D00580209 /* Smile */;
 			targetProxy = C8BD447B1A82E90D00580209 /* PBXContainerItemProxy */;
+=======
+		5D2410201A82E8FA002FB874 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D2410081A82E8FA002FB874 /* Smile */;
+			targetProxy = 5D24101F1A82E8FA002FB874 /* PBXContainerItemProxy */;
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+<<<<<<< HEAD
 		C8BD446E1A82E90D00580209 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C8BD446F1A82E90D00580209 /* Base */,
+=======
+		5D2410121A82E8FA002FB874 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D2410131A82E8FA002FB874 /* Base */,
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		C8BD44731A82E90D00580209 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C8BD44741A82E90D00580209 /* Base */,
+=======
+		5D2410171A82E8FA002FB874 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D2410181A82E8FA002FB874 /* Base */,
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -255,7 +456,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+<<<<<<< HEAD
 		C8BD44821A82E90D00580209 /* Debug */ = {
+=======
+		5D2410261A82E8FA002FB874 /* Debug */ = {
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -297,7 +502,11 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		C8BD44831A82E90D00580209 /* Release */ = {
+=======
+		5D2410271A82E8FA002FB874 /* Release */ = {
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -332,7 +541,11 @@
 			};
 			name = Release;
 		};
+<<<<<<< HEAD
 		C8BD44851A82E90D00580209 /* Debug */ = {
+=======
+		5D2410291A82E8FA002FB874 /* Debug */ = {
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -342,7 +555,11 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		C8BD44861A82E90D00580209 /* Release */ = {
+=======
+		5D24102A1A82E8FA002FB874 /* Release */ = {
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -352,7 +569,11 @@
 			};
 			name = Release;
 		};
+<<<<<<< HEAD
 		C8BD44881A82E90D00580209 /* Debug */ = {
+=======
+		5D24102C1A82E8FA002FB874 /* Debug */ = {
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -371,7 +592,11 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		C8BD44891A82E90D00580209 /* Release */ = {
+=======
+		5D24102D1A82E8FA002FB874 /* Release */ = {
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -389,15 +614,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+<<<<<<< HEAD
 		C8BD44601A82E90D00580209 /* Build configuration list for PBXProject "Smile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C8BD44821A82E90D00580209 /* Debug */,
 				C8BD44831A82E90D00580209 /* Release */,
+=======
+		5D2410041A82E8FA002FB874 /* Build configuration list for PBXProject "Smile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D2410261A82E8FA002FB874 /* Debug */,
+				5D2410271A82E8FA002FB874 /* Release */,
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+<<<<<<< HEAD
 		C8BD44841A82E90D00580209 /* Build configuration list for PBXNativeTarget "Smile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -411,10 +645,29 @@
 			buildConfigurations = (
 				C8BD44881A82E90D00580209 /* Debug */,
 				C8BD44891A82E90D00580209 /* Release */,
+=======
+		5D2410281A82E8FA002FB874 /* Build configuration list for PBXNativeTarget "Smile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D2410291A82E8FA002FB874 /* Debug */,
+				5D24102A1A82E8FA002FB874 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5D24102B1A82E8FA002FB874 /* Build configuration list for PBXNativeTarget "SmileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D24102C1A82E8FA002FB874 /* Debug */,
+				5D24102D1A82E8FA002FB874 /* Release */,
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
+<<<<<<< HEAD
 	rootObject = C8BD445D1A82E90D00580209 /* Project object */;
+=======
+	rootObject = 5D2410011A82E8FA002FB874 /* Project object */;
+>>>>>>> f45ecad8458e34404a2883b80b29fd26acf68b0c
 }
