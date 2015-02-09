@@ -90,15 +90,15 @@ class FifthViewController: ExerciseViewController {
             self.button.frame.origin.y = self.button.frame.origin.y + 20
             self.button.backgroundColor = UIColor.redColor()
             self.view.layoutIfNeeded()
-            })
-    jumpingButtonReturn()
+        })
+        jumpingButtonReturn()
     }
     func jumpingButtonReturn() {
         UIView.animateWithDuration(2, animations: { () -> Void in
             self.button.backgroundColor = UIColor.greenColor()
             self.view.layoutIfNeeded()
         })
-returnhome()
+        returnhome()
     }
     
     func returnhome() {

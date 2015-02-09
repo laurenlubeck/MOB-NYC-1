@@ -10,14 +10,7 @@ import UIKit
 
 class SixthViewController: ExerciseViewController, UITableViewDelegate, UITableViewDataSource {
     let tableView = UITableView()
-    var rowLabel = UILabel()
 
-    func setTitleforCell() {
-        rowLabel.text = "Row: "
-        // count of row syntax /(indexPath.row)
-        rowLabel.textColor = UIColor.greenColor()
-        rowLabel.textAlignment = NSTextAlignment.Center
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +22,9 @@ class SixthViewController: ExerciseViewController, UITableViewDelegate, UITableV
         self.tableView.frame = self.exerciseView.frame
         self.tableView.contentInset = UIEdgeInsetsMake(CGRectGetMaxY(self.navigationController!.navigationBar.frame), 0, 0, 0)
         self.tableView.autoresizingMask = self.exerciseView.autoresizingMask
+        
     }
-    
+
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -41,15 +35,59 @@ class SixthViewController: ExerciseViewController, UITableViewDelegate, UITableV
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell") as UITableViewCell?
-        if cell == nil {
+        
+        if (cell == nil) {
             cell = UITableViewCell(style: .Default, reuseIdentifier: "Cell")
-           
         }
+        
+        var rowLabel = UILabel()
         cell?.addSubview(rowLabel)
+        rowLabel.text = "Row: \(indexPath.row)"
+        rowLabel.textColor = UIColor.greenColor()
+        rowLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+        rowLabel.textAlignment = NSTextAlignment.Center
         
-        return cell!
+        // constraints for center x
+        cell?.addConstraint(NSLayoutConstraint(
+            item: rowLabel,
+            attribute: .CenterX,
+            relatedBy: .Equal,
+            toItem: cell?,
+            attribute: .CenterX,
+            multiplier: 1.0,
+            constant: 0))
+        // constraints for center y
+        cell?.addConstraint(NSLayoutConstraint(
+            item: rowLabel,
+            attribute: .CenterY,
+            relatedBy: .Equal,
+            toItem: cell?,
+            attribute: .CenterY,
+            multiplier: 1.0,
+            constant: 0))
         
+        // constraints for height
+        
+        cell?.addConstraint(NSLayoutConstraint(
+            item: rowLabel,
+            attribute: .Height,
+            relatedBy: .Equal,
+            toItem: nil,
+            attribute: NSLayoutAttribute.NotAnAttribute,
+            multiplier: 1.0,
+            constant: 20))
+        
+        // constraints for width
+        cell?.addConstraint(NSLayoutConstraint(
+            item: rowLabel,
+            attribute: .Width,
+            relatedBy: .Equal,
+            toItem: nil,
+            attribute: NSLayoutAttribute.NotAnAttribute,
+            multiplier: 1.0,
+            constant: 80))
 
+        return cell!
         
     }
     
