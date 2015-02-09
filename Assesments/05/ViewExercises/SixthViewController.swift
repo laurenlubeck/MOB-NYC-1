@@ -10,6 +10,14 @@ import UIKit
 
 class SixthViewController: ExerciseViewController, UITableViewDelegate, UITableViewDataSource {
     let tableView = UITableView()
+    var rowLabel = UILabel()
+
+    func setTitleforCell() {
+        rowLabel.text = "Row: "
+        // count of row syntax /(indexPath.row)
+        rowLabel.textColor = UIColor.greenColor()
+        rowLabel.textAlignment = NSTextAlignment.Center
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,16 +43,17 @@ class SixthViewController: ExerciseViewController, UITableViewDelegate, UITableV
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell") as UITableViewCell?
         if cell == nil {
             cell = UITableViewCell(style: .Default, reuseIdentifier: "Cell")
+           
         }
-        
-        /* TODO:
-        The table view cells on this screen are blank.
-        
-        Add a label to each cell that is green and centered, and have its text say “Row {X}” (X is the row number of the cell). The tableview should rotate correctly. Use Autolayout.
-        */
+        cell?.addSubview(rowLabel)
         
         return cell!
+        
+
+        
     }
+    
+
     
     override func shouldAutorotate() -> Bool {
         return true

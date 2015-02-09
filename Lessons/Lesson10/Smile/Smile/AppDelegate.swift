@@ -1,16 +1,16 @@
 //
 //  AppDelegate.swift
-//  ViewExercises
+//  Smile
 //
-//  Created by Rudd Taylor on 9/9/14.
-//  Copyright (c) 2014 Rudd Taylor. All rights reserved.
+//  Created by Rudd Taylor on 2/4/15.
+//  Copyright (c) 2015 GA. All rights reserved.
 //
 
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-                            
+
     var window: UIWindow?
 
 
@@ -40,7 +40,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 
 }
