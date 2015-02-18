@@ -8,6 +8,14 @@
 
 import UIKit
 
+/* TODO:
+Build a scroll view that takes up the entire screen.
+
+In the scroll view, place a blue box at the top (20px high, 10px horizontal margins with the screen, a very tall (1000+px, width the same as the screen) purple label containing white text in the middle, and a red box at the bottom (20px high, 10px horizontal margins with the screen). The scroll view should scroll the entire height of the content.
+Use Autolayout.
+Your view should be in self.exerciseView, not self.view.
+*/
+
 class FourthViewController: ExerciseViewController {
 
     var blueBox = UIView()
@@ -20,48 +28,47 @@ class FourthViewController: ExerciseViewController {
         super.viewDidLoad()
         self.exerciseDescription.text = "View 4"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .Plain, target: self, action: "next")
+        
+        // parameters of the scroll view
         scrollView.showsVerticalScrollIndicator = true
         scrollView.scrollEnabled = true
         scrollView.userInteractionEnabled = true
         scrollView.contentSize = view.frame.size
+        
+        // call autolayout function to load items
         autolayout()
-        
-        
     }
-        /* TODO:
-        Build a scroll view that takes up the entire screen. 
-        
-        In the scroll view, place a blue box at the top (20px high, 10px horizontal margins with the screen, a very tall (1000+px, width the same as the screen) purple label containing white text in the middle, and a red box at the bottom (20px high, 10px horizontal margins with the screen). The scroll view should scroll the entire height of the content.
-        
-        Use Autolayout.
-
-        
-        Your view should be in self.exerciseView, not self.view.
-        */
+    
     
     func autolayout() {
      
+        // scroll view parameters
         scrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
         view.addSubview(scrollView)
         scrollView.contentSize = CGSize(width: self.view.frame.size.width, height: 1300)
         
+        //blue box parameters
         blueBox.setTranslatesAutoresizingMaskIntoConstraints(false)
         scrollView.addSubview(blueBox)
         blueBox.backgroundColor = UIColor.blueColor()
         
         
-        
+        // purple label paraments
         purpleLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
         scrollView.addSubview(purpleLabel)
         purpleLabel.backgroundColor = UIColor.purpleColor()
         purpleLabel.textColor = UIColor.whiteColor()
         purpleLabel.text = "Just for Practice"
-
-
+        
+        // redbox parameters
         redBox.setTranslatesAutoresizingMaskIntoConstraints(false)
         scrollView.addSubview(redBox)
         redBox.backgroundColor = UIColor.redColor()
     
+        
+        //////////////////// CONSTRAINTS FOR BOXES ////////////////////
+        
+        /////////////////// CONSTRAINTS FOR SCROLL  ///////////////////
         
         // constraints for scroll at top
         view.addConstraint(NSLayoutConstraint(
@@ -101,7 +108,8 @@ class FourthViewController: ExerciseViewController {
             multiplier: 1.0,
             constant: 0))
         
-        
+        //////////////////// CONSTRAINTS FOR BLUE BOX  ////////////////////
+
         
         // constraints for blue box at top
         view.addConstraint(NSLayoutConstraint(
@@ -142,7 +150,8 @@ class FourthViewController: ExerciseViewController {
             constant: 20))
         
         
-    
+        //////////////////// CONSTRAINTS FOR PURPLE LABEL  ////////////////////
+
         // constraints for purple label below blue box
         view.addConstraint(NSLayoutConstraint(
             item: purpleLabel,
@@ -185,6 +194,8 @@ class FourthViewController: ExerciseViewController {
             constant: 1000))
 
         
+        //////////////////// CONSTRAINTS FOR RED BOX  ////////////////////
+        
         // constraints for red box at top
         view.addConstraint(NSLayoutConstraint(
             item: redBox,
@@ -222,9 +233,6 @@ class FourthViewController: ExerciseViewController {
             attribute: NSLayoutAttribute.NotAnAttribute,
             multiplier: 1.0,
             constant: 20))
-        
-        
-        
     }
     
     

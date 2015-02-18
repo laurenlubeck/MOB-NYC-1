@@ -15,7 +15,6 @@ class SixthViewController: ExerciseViewController, UITableViewDelegate, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         self.exerciseDescription.text = "View 6"
-        
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.exerciseView.addSubview(tableView)
@@ -39,14 +38,16 @@ class SixthViewController: ExerciseViewController, UITableViewDelegate, UITableV
         if (cell == nil) {
             cell = UITableViewCell(style: .Default, reuseIdentifier: "Cell")
         }
-        
+        // row parameters
         var rowLabel = UILabel()
         cell?.addSubview(rowLabel)
         rowLabel.text = "Row: \(indexPath.row)"
         rowLabel.textColor = UIColor.greenColor()
         rowLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
         rowLabel.textAlignment = NSTextAlignment.Center
-        
+     
+        //////////////////// CONSTRAINTS FOR LABEL IN CELL  ////////////////////
+
         // constraints for center x
         cell?.addConstraint(NSLayoutConstraint(
             item: rowLabel,

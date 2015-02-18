@@ -7,6 +7,14 @@
 //
 
 import UIKit
+/* TODO:
+Build four blue squares, 20 points wide, one in each corner of the screen.
+They must stay in their respective corners on device rotation.
+
+Use Autolayout.
+
+Your view should be in self.exerciseView, not self.view
+*/
 
 class ThirdViewController: ExerciseViewController {
     
@@ -18,45 +26,36 @@ class ThirdViewController: ExerciseViewController {
         super.viewDidLoad()
         self.exerciseDescription.text = "View 3"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .Plain, target: self, action: "next")
-        
+       // call autolayout 
         autolayout()
-        /* TODO:
-        Build four blue squares, 20 points wide, one in each corner of the screen.
-        They must stay in their respective corners on device rotation. 
-        
-        Use Autolayout.
-        
-        Your view should be in self.exerciseView, not self.view
-        */
     }
     
     
     
         func autolayout() {
+            // mask the autoresizing constraint
             box1.setTranslatesAutoresizingMaskIntoConstraints(false)
             box2.setTranslatesAutoresizingMaskIntoConstraints(false)
             box3.setTranslatesAutoresizingMaskIntoConstraints(false)
             box4.setTranslatesAutoresizingMaskIntoConstraints(false)
     
+            // add subview to view
             view.addSubview(box1)
             view.addSubview(box2)
             view.addSubview(box3)
             view.addSubview(box4)
     
+            // color the boxes blue
             box1.backgroundColor = UIColor.blueColor()
-            // redBox.layer.borderWidth = 0.2
-            // redBoxBorder.borderColor = UIColor.blackColor().CGColor
-    
-    
             box2.backgroundColor = UIColor.blueColor()
-            // blackBox.layer.borderWidth = 0.2
-            // blackBoxBorder.borderColor = UIColor.redColor().CGColor
-            
             box3.backgroundColor = UIColor.blueColor()
             box4.backgroundColor = UIColor.blueColor()
             
+         
             
+          //////////////////// CONSTRAINTS FOR BOXES ////////////////////
             
+          //////////////////// CONSTRAINTS FOR BOX 1 ////////////////////
             // constraints for box 1 at top
             view.addConstraint(NSLayoutConstraint(
                 item: box1,
@@ -66,6 +65,7 @@ class ThirdViewController: ExerciseViewController {
                 attribute: .Top,
                 multiplier: 1.0,
                 constant: 64))
+            
             // constraints for box 1 at left
             view.addConstraint(NSLayoutConstraint(
                 item: box1,
@@ -75,6 +75,7 @@ class ThirdViewController: ExerciseViewController {
                 attribute: .Left,
                 multiplier: 1,
                 constant: 0))
+            
             // constraints for  box 1 width
             view.addConstraint(NSLayoutConstraint(
                 item: box1,
@@ -95,7 +96,7 @@ class ThirdViewController: ExerciseViewController {
                 multiplier: 1.0,
                 constant: 20))
     
-            
+          //////////////////// CONSTRAINTS FOR BOX 2 ////////////////////
             // constraints for box 2 at top
             view.addConstraint(NSLayoutConstraint(
                 item: box2,
@@ -105,6 +106,7 @@ class ThirdViewController: ExerciseViewController {
                 attribute: .Top,
                 multiplier: 1.0,
                 constant: 64))
+           
             // constraints for box 2 at right
             view.addConstraint(NSLayoutConstraint(
                 item: box2,
@@ -114,6 +116,7 @@ class ThirdViewController: ExerciseViewController {
                 attribute: .Right,
                 multiplier: 1,
                 constant: 0))
+            
             // constraints for box 2 width
             view.addConstraint(NSLayoutConstraint(
                 item: box2,
@@ -123,6 +126,7 @@ class ThirdViewController: ExerciseViewController {
                 attribute: NSLayoutAttribute.NotAnAttribute,
                 multiplier: 1.0,
                 constant: 20))
+            
             // constraints for box 2 height
             view.addConstraint(NSLayoutConstraint(
                 item: box2,
@@ -133,7 +137,7 @@ class ThirdViewController: ExerciseViewController {
                 multiplier: 1.0,
                 constant: 20))
             
-            
+            //////////////////// CONSTRAINTS FOR BOX 3 ////////////////////
             // constraints for box 3 at bottom
             view.addConstraint(NSLayoutConstraint(
                 item: box3,
@@ -142,7 +146,8 @@ class ThirdViewController: ExerciseViewController {
                 toItem: exerciseView,
                 attribute: .Bottom,
                 multiplier: 1.0,
-                constant: -45))
+                constant: -44))
+           
             // constraints for box 3 at left
             view.addConstraint(NSLayoutConstraint(
                 item: box3,
@@ -152,6 +157,7 @@ class ThirdViewController: ExerciseViewController {
                 attribute: .Left,
                 multiplier: 1,
                 constant: 0))
+            
             // constraints for  box 3 width
             view.addConstraint(NSLayoutConstraint(
                 item: box3,
@@ -172,7 +178,7 @@ class ThirdViewController: ExerciseViewController {
                 multiplier: 1.0,
                 constant: 20))
             
-            
+            //////////////////// CONSTRAINTS FOR BOX 4 ////////////////////
             // constraints for box 4 at bottom
             view.addConstraint(NSLayoutConstraint(
                 item: box4,
@@ -181,7 +187,8 @@ class ThirdViewController: ExerciseViewController {
                 toItem: exerciseView,
                 attribute: .Bottom,
                 multiplier: 1.0,
-                constant: -45))
+                constant: -44))
+            
             // constraints for box 4 at right
             view.addConstraint(NSLayoutConstraint(
                 item: box4,
@@ -191,6 +198,7 @@ class ThirdViewController: ExerciseViewController {
                 attribute: .Right,
                 multiplier: 1,
                 constant: 0))
+            
             // constraints for  box 4 width
             view.addConstraint(NSLayoutConstraint(
                 item: box4,
@@ -210,13 +218,7 @@ class ThirdViewController: ExerciseViewController {
                 attribute: NSLayoutAttribute.NotAnAttribute,
                 multiplier: 1.0,
                 constant: 20))
-            
-    
-            self.view.addSubview(box1)
-            self.view.addSubview(box2)
-            self.view.addSubview(box3)
-            self.view.addSubview(box4)
-            
+
        }
     
     

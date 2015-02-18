@@ -20,9 +20,7 @@ class FirstViewController: ExerciseViewController {
     /* TODO:
     Create a red box (10px tall, the width of the screen) with a black border on the very top of the screen below the nav bar,
     and a black box with a red border on the very bottom of the screen (same dimensions), above the toolbar.
-    
     Use Springs & Struts.
-    
     Your view should be in self.exerciseView, not self.view
     */
     
@@ -31,6 +29,9 @@ class FirstViewController: ExerciseViewController {
         let topMargin: CGFloat = 64
         let bottomMargin: CGFloat = 513
         let size: CGFloat = 10
+        
+        
+        
         
         // red box
         var redBox = UIView(frame: CGRect(x: 0, y: topMargin, width: self.exerciseView.frame.width, height: size))

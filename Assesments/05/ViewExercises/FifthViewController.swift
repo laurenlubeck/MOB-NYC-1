@@ -25,16 +25,16 @@ class FifthViewController: ExerciseViewController {
         super.viewDidLoad()
         self.exerciseDescription.text = "View 5"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .Plain, target: self, action: "next")
-  
+        
+  // parameters and colors for button
         button.setTranslatesAutoresizingMaskIntoConstraints(false)
         button.backgroundColor = UIColor.greenColor()
         button.layer.borderColor = UIColor.redColor().CGColor
         button.layer.borderWidth = 2
-
         button.setTitle("Tap me!", forState: UIControlState.Normal)
         button.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         
-        
+        //target for button
         button.addTarget(self,action: "jumpingButton",forControlEvents: UIControlEvents.TouchUpInside)
         
         self.view.addSubview(button)
@@ -44,6 +44,9 @@ class FifthViewController: ExerciseViewController {
    
     func autoLayout() {
         
+        
+        //////////////////// CONSTRAINTS FOR BUTTON  ////////////////////
+
         // constraints for button at center X
         view.addConstraint(NSLayoutConstraint(
             item: button,
@@ -84,7 +87,7 @@ class FifthViewController: ExerciseViewController {
 
     }
     
-    
+    //function to move up 20 and turn red
     func jumpingButton() {
         UIView.animateWithDuration(2, animations: { () -> Void in
             self.button.frame.origin.y = self.button.frame.origin.y + 20
@@ -93,6 +96,8 @@ class FifthViewController: ExerciseViewController {
         })
         jumpingButtonReturn()
     }
+    
+    // function to turn green
     func jumpingButtonReturn() {
         UIView.animateWithDuration(2, animations: { () -> Void in
             self.button.backgroundColor = UIColor.greenColor()
@@ -101,6 +106,7 @@ class FifthViewController: ExerciseViewController {
         returnhome()
     }
     
+    // function to move back 20
     func returnhome() {
         self.button.frame.origin.y = self.button.frame.origin.y - 20
     }
