@@ -1,0 +1,4 @@
+// Playground - noun: a place where people can play
+
+import UIKit
+varDriveVoteDrink = "You can drive, vote and drink (but not "if age>=16 && age<18 {    println("You can drive")} else if    age>=18 && age<21 {    println("You can drive and vote")} else {    age>=21    println("You can drive, vote and drink (but not at the same time!)")}// TODO: Print the first fifty multiples of seven minus one (e.g. the first three multiples are 7, 14, 21. The first three multiples minus one are 6, 13, 20)var total = 7for total in 0...50{    println("\(total) times 7 minus 1 is \((index * 7)-1)")}
