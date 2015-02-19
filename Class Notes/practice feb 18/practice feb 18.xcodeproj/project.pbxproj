@@ -13,6 +13,8 @@
 		C8214BEC1A95610200A901FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8214BEB1A95610200A901FA /* Images.xcassets */; };
 		C8214BEF1A95610300A901FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8214BED1A95610300A901FA /* LaunchScreen.xib */; };
 		C8214BFB1A95610300A901FA /* practice_feb_18Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8214BFA1A95610300A901FA /* practice_feb_18Tests.swift */; };
+		C8214C051A95676100A901FA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C8214C041A95676100A901FA /* Settings.bundle */; };
+		C8214C091A95759E00A901FA /* PropertyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8214C081A95759E00A901FA /* PropertyList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		C8214BF41A95610300A901FA /* practice feb 18Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "practice feb 18Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8214BF91A95610300A901FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8214BFA1A95610300A901FA /* practice_feb_18Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practice_feb_18Tests.swift; sourceTree = "<group>"; };
+		C8214C041A95676100A901FA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		C8214C081A95759E00A901FA /* PropertyList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PropertyList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 		C8214BD61A95610200A901FA = {
 			isa = PBXGroup;
 			children = (
+				C8214C081A95759E00A901FA /* PropertyList.plist */,
 				C8214BE11A95610200A901FA /* practice feb 18 */,
 				C8214BF71A95610300A901FA /* practice feb 18Tests */,
 				C8214BE01A95610200A901FA /* Products */,
@@ -80,6 +85,7 @@
 				C8214BE41A95610200A901FA /* AppDelegate.swift */,
 				C8214BE61A95610200A901FA /* ViewController.swift */,
 				C8214BE81A95610200A901FA /* Main.storyboard */,
+				C8214C041A95676100A901FA /* Settings.bundle */,
 				C8214BEB1A95610200A901FA /* Images.xcassets */,
 				C8214BED1A95610300A901FA /* LaunchScreen.xib */,
 				C8214BE21A95610200A901FA /* Supporting Files */,
@@ -192,8 +198,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8214C051A95676100A901FA /* Settings.bundle in Resources */,
 				C8214BEA1A95610200A901FA /* Main.storyboard in Resources */,
 				C8214BEF1A95610300A901FA /* LaunchScreen.xib in Resources */,
+				C8214C091A95759E00A901FA /* PropertyList.plist in Resources */,
 				C8214BEC1A95610200A901FA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
